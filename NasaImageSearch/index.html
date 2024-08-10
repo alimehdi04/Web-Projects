@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasa Image Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="heading">Space Gallery</h1>
+    </header>
+    <nav id="search">
+        <input type="text" placeholder="--ex:Venus--" id="searchtxt">
+        <button id="searchbtn"><i class="fa-solid fa-magnifying-glass" style="color: #fdfdfd;"></i></button>
+    </nav>
+    <main id="image-gallery">
+        <div id="initial-msg">Enter a Space-related term in the search box above to see some amazing images</div>
+        <div id="loading-msg" style="display: none;"><div class="loader"></div></div>
+        <div id="gallery-container"></div>
+    </main>   <!--  Image display with title and description -->
+    
+    
+    
+    <footer>
+        <p>&copy All images are sourced from NASA's public database and are used for informational purposes only.</p>
+        <p>Tip: Try searching for 'nebula,' 'black hole,' or 'exoplanet' for stunning images!</p>
+        <p>Developed by Autisheimer | Github: alimehdi04</p>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

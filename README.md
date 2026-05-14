@@ -1,3 +1,16 @@
+curl -X POST http://localhost:5000/chat \
+  -H "Content-Type: application/json" \
+  -d '{"session_id": "paste-your-session-id-here", "message": "What is climate change?"}'
+
+# Expected: {"task_id": "some-task-id"}
+
+
+curl http://localhost:5000/result/paste-your-task-id-here
+
+# First few calls: {"status": "pending"}
+# Once Ollama finishes: {"status": "done", "answer": "...", "sources": [...]}
+
+
 # Web Projects
 
 Welcome to the Web Projects repository! This repository contains a collection of web projects that I have built during my learning journey in web development.
